@@ -1,0 +1,130 @@
+body
+{
+    text-align: center;
+    background: #494949;
+}
+@font-face {
+  font-family: TextFont;
+  src: url(/Fonts/Alegreya.ttf);
+}
+@font-face {
+  font-family: HeadFont;
+  src: url(Fonts/AbrilFatface-Regular.ttf);
+}
+
+html
+{
+	padding: 0 1em;
+}
+
+.cd__main{
+    max-width: 720px !important;
+}
+
+img
+{
+  padding: 15px;
+  height: 250px;
+  width: 250px;
+}
+
+.image-left, .image-right
+{
+	margin: 1em 0;
+}
+
+@media (min-width: 20em)
+{
+	.image-left, .image-right
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	.image-left img
+	{
+
+		margin-right: 1em;
+		float: left; /* fallback */
+	}
+
+	.image-right img
+	{
+		order: 1;
+		margin-left: 1em;
+		float: right; /* fallback */
+	}
+	
+	/* clearfix for fallback */
+	.image-left::after,
+	.image-right::after
+	{
+		content: "";
+  	display: block;
+		clear: both;
+	}
+}
+
+@media (min-width: 30em)
+{
+	.image-left img, .image-right img
+	{
+		flex-shrink: 0;
+	}
+}
+h2{
+  font-size: 27px;
+  font-family: TextFont; 
+  color: rgb(255, 255, 255);
+}
+
+p{
+    font-family: TextFont;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+a{
+  font-family: HeadFont;
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.5);
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 20px 27px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: rgb(177, 177, 177);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    padding: 20px 27px;
+    background-color: rgb(177, 177, 177);
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    font-size: 25px;
+    background-color: rgb(177, 177, 177);
+    color: black;
+  }

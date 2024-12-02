@@ -1,0 +1,81 @@
+body
+{
+  text-align: center;
+  background-image: url('images/background Tarik.png');
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: left 225px top 1px; /* Offset values */
+  background-size: auto 750px;
+  background-color: #000000;
+}
+
+@font-face {
+  font-family: TextFont;
+  src: url(Fonts/Alegreya.ttf);
+}
+@font-face {
+  font-family: HeadFont;
+  src: url(Fonts/AbrilFatface-Regular.ttf);
+}
+
+img{
+  padding: 15px;
+  float: left;
+  width: 500px;
+  height: 450px;
+}
+p
+{
+  font-family: TextFont;
+  text-align: start;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  /* -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(0, 0, 0); */
+}
+a{
+  font-family: HeadFont;
+    color: black;
+    text-decoration: none;
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.5);
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 20px 27px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: rgb(177, 177, 177);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    padding: 20px 27px;
+    background-color: rgb(177, 177, 177);
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    font-size: 25px;
+    background-color: rgb(177, 177, 177);
+    color: black;
+  }

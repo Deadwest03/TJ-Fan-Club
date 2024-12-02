@@ -1,0 +1,83 @@
+body
+{
+  background: #494949;
+  text-align: center;
+}
+img{
+    width: 350px;
+    height: 250px;
+}
+@font-face {
+  font-family: TextFont;
+  src: url(/Fonts/Alegreya.ttf);
+}
+@font-face {
+  font-family: HeadFont;
+  src: url(Fonts/AbrilFatface-Regular.ttf);
+}
+h2{
+  font-family: TextFont;
+  color: rgb(255, 255, 255);
+}
+a{
+    font-family: HeadFont;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.5);
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 20px 27px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: rgb(177, 177, 177);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  padding: 20px 27px;
+  background-color: rgb(177, 177, 177);
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  font-size: 25px;
+  background-color: rgb(177, 177, 177);
+  color: black;
+}
